@@ -64,11 +64,13 @@ class AuthController extends GetxController {
         username: email,
         confirmationCode: code,
       ).then((value) {
-        Get.offAll(
-          () => HomePage(),
-          transition: Transition.circularReveal,
-          duration: const Duration(milliseconds: 500),
-        );
+        if (value.isSignUpComplete) {
+          Get.offAll(
+            () => HomePage(),
+            transition: Transition.circularReveal,
+            duration: const Duration(milliseconds: 500),
+          );
+        }
       });
     } on AmplifyException catch (e) {
       Get.snackbar('Error', e.message, snackPosition: SnackPosition.BOTTOM);
@@ -78,7 +80,7 @@ class AuthController extends GetxController {
   void logOut() async {
     try {
       await Amplify.Auth.signOut().then((value) {
-        Get.off(
+        Get.offAll(
           () => AuthPage(),
           transition: Transition.circularReveal,
           duration: const Duration(milliseconds: 500),
