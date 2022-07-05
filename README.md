@@ -1,16 +1,11 @@
 # AWS Amplify Authentication Flow with Flutter
 
-A new Flutter project.
+- Flutter
+- GetX
+- AWS Amplify 
 
-## Getting Started
+## Authentication Flow
 
-This project is a starting point for a Flutter application.
+<img src="https://user-images.githubusercontent.com/68303716/177416833-ba82edfe-3677-48fb-b13c-33cdeeb234b5.png" width="250" height="500"/>
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
