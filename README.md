@@ -1,4 +1,4 @@
-# login_with_amzon_cognito_api
+# AWS Amplify Authentication Flow with Flutter
 
 A new Flutter project.
 
